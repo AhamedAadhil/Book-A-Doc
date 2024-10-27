@@ -8,6 +8,7 @@ import MyProfile from "./pages/MyProfile";
 import MyAppoinments from "./pages/MyAppoinments";
 import Appoinment from "./pages/Appoinment";
 import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -22,8 +23,9 @@ const App = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/my-profile" element={<MyProfile />} />
         <Route path="/my-appoinments" element={<MyAppoinments />} />
-        <Route path="/appoinment/:doctId" element={<Appoinment />} />
+        <Route path="/appoinment/:docId" element={<Appoinment />} />
       </Routes>
+      <Footer />
     </div>
   );
 };
